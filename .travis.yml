@@ -3,6 +3,7 @@ services:
   - docker
 
 before_install:
+  - yes | sudo gem install rake
   - docker build -t karthikgirraj/docker-react -f Dockerfile.dev .
 
 script:
